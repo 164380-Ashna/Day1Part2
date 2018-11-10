@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>printing</title>
+<script language="javascript" type="text/javascript">
+function tipCalculator(bill)
+{
+	if(bill<50)
+	{
+		var tip=0.2*bill;
+		return tip;
+	}
+	else if((bill>50) && (bill<200))
+	{
+		var tip=0.15*bill;
+		return tip;
+	}
+	else if(bill>200)
+	{
+		 var tip=0.1*bill;
+		return tip;
+	}
+	else
+	{
+		document.write("Not Valid");
+	}	
+}
+</script>
+</head>
+<body>
+<script>
+var bill=parseInt(prompt("Enter the bill: "));
+document.write("The bill is : "+ bill);
+var tip1=tipCalculator(bill);
+var final_bill=bill+tip1;
+document.write("<br/>");
+document.write("The final bill is "+ final_bill );
+</script>
+</body>
+</html>

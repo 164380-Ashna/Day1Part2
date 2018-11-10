@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>printing</title>
+<script language="javascript" type="text/javascript">
+</script>
+</head>
+<body>
+<script>
+
+var Mark={
+	Name:"Mark",
+	mass:58,
+	height:152,
+	bmi: function calbmi(){
+
+var hsq=this.height*this.height;
+var bmires=this.mass/hsq;
+return bmires;
+}
+
+};
+
+var John={
+	Name:"John",
+	mass:85,
+	height:164,
+	bmi:function calbmi(){
+
+var hsq=this.height*this.height;
+var bmires=this.mass/hsq;
+return bmires;
+}
+};
+
+
+document.write('Mark has the height: '+ Mark.height);
+document.write("<br/>");
+document.write("Mark has the mass: "+ Mark.mass);
+document.write("<br/>");
+document.write("Mark has the BMI: "+ Mark.bmi());
+document.write("<br/>");
+
+document.write("<br/>");
+document.write("<br/>");
+
+document.write("John has the height: "+ John.height);
+document.write("<br/>");
+document.write("John has the mass: "+ John.mass);
+document.write("<br/>");
+document.write("John has the BMI: "+ John.bmi());
+document.write("<br/>");
+
+document.write("<br/>");
+document.write("<br/>");
+
+if(Mark.bmi()>John.bmi())
+	{
+	  document.write("Mark has the higher BMI");
+	  document.write("<br/>");
+	}
+
+else if(Mark.bmi()<John.bmi())
+	{
+	  document.write("John has the higher BMI");
+	  document.write("<br/>");	
+	}
+else if(Mark.bmi()=John.bmi())
+	{
+	  document.write("Both have equal BMI");
+	  document.write("<br/>");
+	}
+else 
+	{
+	  document.write("Invalid data");
+	}
+
+</script>
+</body>
+</html>
