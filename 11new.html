@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>11th ques</title>
+</head>
+<body>
+
+<div text align="center">
+<h2><b> Employee information</b> </h2>
+
+<div>
+
+
+<p>
+Employee Name:<input type="text" placeholder="Enter here" id="p1" size="50"><br/><br/>
+
+
+
+Employee id:<input type="text" placeholder="Enter here" id="p2" size="50"><br/><br/>
+
+
+
+Employee Salary:<input type="text" placeholder="Enter here" id="p3"><br/><br/>
+
+
+
+Employee address:<textarea rows="4" cols="50" id="p4"></textarea><br/><br/>
+
+
+
+Employee mobile number:<input type="text" placeholder="Enter here" id="p5" size="10"><br/><br/>
+
+
+
+Employee City:<input type="text" placeholder="Enter here" id="p6"><br/><br/>
+
+
+
+Employee pincode:<input type="text" placeholder="Enter here" id="p7" size="6"><br/><br/>
+
+
+
+Employee email id:<input type="text" placeholder="Enter here" id="p8"><br/><br/>
+
+
+<input type="submit" onclick="formSubmit()" value="Send form data!">
+
+
+
+
+
+</p>
+
+
+</div>
+
+<p id="demo"></p>
+
+<div id="result"></div>
+
+<script language="javascript" type="text/javascript">
+
+
+function formSubmit(){
+
+
+	var ename = document.getElementById("p1");
+	var id = document.getElementById("p2");
+	var sal = document.getElementById("p3");
+	var address = document.getElementById("p4");
+	var mob = document.getElementById("p5");
+	var city = document.getElementById("p6");
+	var pin = document.getElementById("p7");
+	var email = document.getElementById("p8");
+
+
+	document.write("THE NAME OF EMPLOYEE IS "+ename.value);
+	document.write(" <br/>");
+
+	document.write("THE EMPLOYEE ID OF EMPLOYEE IS "+id.value);
+	document.write(" <br/>");
+
+	document.write("THE SALARY OF EMPLOYEE IS "+sal.value);
+	document.write(" <br/>");
+
+	document.write("THE ADDRESS OF EMPLOYEE IS "+address.value);
+	document.write(" <br/>");
+
+	document.write("THE MOBILE NUMBER OF EMPLOYEE IS "+mob.value);
+	document.write(" <br/>");
+
+	document.write("THE CITY OF EMPLOYEE IS "+city.value);
+	document.write(" <br/>");
+
+	document.write("THE PIN CODE OF EMPLOYEE IS "+pin.value);
+	document.write(" <br/>");
+
+	document.write("THE EMAIL OF EMPLOYEE IS "+email.value);
+	document.write(" <br/>");
+
+}
+
+
+<input type="button" onclick="updateForm()" value="update form data!">
+
+function updateForm(){
+
+localStorage.removeItem("ename");
+
+document.write("The name has been removed");
+
+localStorage.removeItem("id");
+
+document.write("The id has been removed");
+
+
+
+}
+
+
+</script>
+
+</body>
+</div>
+</html>
